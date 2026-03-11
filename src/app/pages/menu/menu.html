@@ -1,0 +1,59 @@
+<div class="menu-layout">
+  <div class="top-bar">
+    <div class="top-left">
+      Раздел: {{ activeSectionName }}
+    </div>
+
+    <div class="top-right">
+      <span>Выбрано пунктов: {{ selectedCount }}</span>
+      <span>Общее значение: {{ totalValue }}</span>
+    </div>
+  </div>
+
+  <div class="content-area">
+    <aside class="sidebar">
+      <button
+        class="section-link"
+        [class.active]="activeSection === 'section1'"
+        (click)="setSection('section1')"
+      >
+        {{ activeSection === 'section1' ? '> ' : '' }}Тип 1
+      </button>
+
+      <button
+        class="section-link"
+        [class.active]="activeSection === 'section2'"
+        (click)="setSection('section2')"
+      >
+        {{ activeSection === 'section2' ? '> ' : '' }}Тип 2
+      </button>
+    </aside>
+
+    <main class="main-content">
+      <div class="main-columns">
+        <div class="items-column">
+          <div *ngFor="let item of visibleItems" class="item-row">
+            <label class="item-label">
+              <input type="checkbox" [(ngModel)]="item.selected" />
+              <div class="item-text">
+                <div class="item-name">{{ item.name }}</div>
+                <div class="item-value">Значение: {{ item.value }}</div>
+              </div>
+            </label>
+          </div>
+
+          <div class="back-button">
+            <button routerLink="/">Назад на главную</button>
+          </div>
+        </div>
+
+        <div class="photo-column">
+  <img
+    [src]="activeSectionImage"
+    class="side-photo"
+  />
+</div>
+      </div>
+    </main>
+  </div>
+</div>

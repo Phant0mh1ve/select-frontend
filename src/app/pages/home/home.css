@@ -1,0 +1,57 @@
+.home-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff7fb;
+  padding: 24px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.welcome-card {
+  width: 100%;
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.welcome-card h1 {
+  margin: 0 0 32px 0;
+  font-size: 64px;
+  line-height: 1.05;
+  font-weight: 700;
+  color: #d81b60;
+}
+
+.home-image {
+  width: 430px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 0 32px 0;
+  border-radius: 18px;
+  box-shadow: 0 14px 30px rgba(216, 27, 96, 0.12);
+}
+
+.start-button {
+  min-width: 230px;
+  padding: 16px 28px;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ff6fa5, #ff9bc6);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(255, 111, 165, 0.22);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.start-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 24px rgba(255, 111, 165, 0.28);
+}
