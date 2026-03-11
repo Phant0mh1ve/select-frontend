@@ -66,7 +66,7 @@ export class Menu {
 
   get activeSectionImage(): string {
   return this.activeSection === 'section1'
-    ? '/mean1.jpg'
-    : '/mean2.jpg';
+    ? 'mean1.jpg'
+    : 'mean2.jpg';
 }
 }
