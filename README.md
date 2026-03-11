@@ -6,7 +6,7 @@
 
 Приложение доступно по ссылке:
 
-https://YOUR_USERNAME.github.io/select-frontend/
+https://Phant0mh1ve.github.io/select-frontend/
 
 ## Функциональность
 
